@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>06-1 itemized deduction</name>
+  <uuid>d2b7cef9-d3dc-4f17-a062-b1f58a803a77</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[if
+	the claimed of the FS_CD of IT201 is not 3  
+	and IT196 is null
+then
+	set the IT201_STND_DED_AMT of scratchpad to the PSDT_DED_AMOUNT of scratchpad ;
+    set the value of the STD_ITZ_IND of IT201 to Standard ( 1 ) ;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

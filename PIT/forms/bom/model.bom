@@ -1,0 +1,1272 @@
+
+
+public class AdjustedReasonCodeId
+        extends java.lang.Enum
+        property "ads.typeId" "9"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "AdjustedReasonCodeId"
+        property "de.generated" "true"
+{
+    domain {static a003, static a027, static a047, static a098, static a099, static a103, static a182, static c045}
+    public static final readonly AdjustedReasonCodeId a003
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "A003";
+    public static final readonly AdjustedReasonCodeId a027
+                property "ads.attributeId" "7"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "A027";
+    public static final readonly AdjustedReasonCodeId a047
+                property "ads.attributeId" "8"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "A047";
+    public static final readonly AdjustedReasonCodeId a098
+                property "ads.attributeId" "3"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "A098";
+    public static final readonly AdjustedReasonCodeId a099
+                property "ads.attributeId" "4"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "A099";
+    public static final readonly AdjustedReasonCodeId a103
+                property "ads.attributeId" "5"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "A103";
+    public static final readonly AdjustedReasonCodeId a182
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "A182";
+    public static final readonly AdjustedReasonCodeId c045
+                property "ads.attributeId" "6"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "C045";
+}
+
+public class AmountField1
+        property "ads.typeId" "1"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "AmountField1"
+        property "de.generated" "true"
+{
+    public double claimed
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "claimed"
+                property update "true";
+    public java.util.List codes domain 0,* class AdjustedReasonCodeId
+                property "ads.attributeId" "3"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "codes"
+                property update "true";
+    public double value
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "value"
+                property update "true";
+    public AmountField1(double claimed, 
+        java.util.List codes domain 0,* class AdjustedReasonCodeId, 
+        double value)
+                property autoExpand "true"
+                property beanConstructor "true"
+                property groups "BALA"
+                property prototype "true";
+    public AmountField1()
+                property "dataio.default" "true";
+    public void addTo_codes(AdjustedReasonCodeId codes)
+                property collectionAttribute "codes"
+                property update "true";
+    public void clear_codes()
+                property collectionAttribute "codes"
+                property update "true";
+    public void removeFrom_codes(AdjustedReasonCodeId codes)
+                property collectionAttribute "codes"
+                property update "true";
+    public void set_codes(java.util.Collection codes domain 0,* class AdjustedReasonCodeId)
+                property collectionAttribute "codes"
+                property update "true";
+}
+
+public class CISSCode
+        property "ads.typeId" "8"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "CISSCode"
+        property "de.generated" "true"
+{
+    public CISSCodeId id
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "id"
+                property update "true";
+    public double value
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "value"
+                property update "true";
+    public CISSCode(CISSCodeId id, double value)
+                property autoExpand "true"
+                property beanConstructor "true"
+                property groups "BALA"
+                property prototype "true";
+    public CISSCode()
+                property "dataio.default" "true";
+}
+
+public class CISSCodeId
+        extends java.lang.Enum
+        property "ads.typeId" "10"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "CISSCodeId"
+        property "de.generated" "true"
+{
+    domain {static c018, static c045, static c062, static p001, static p002, static p002Copy, static p003, static p004, static p005, static p006, static p007, static p008, static p009}
+    public static final readonly CISSCodeId c018
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "C018";
+    public static final readonly CISSCodeId c045
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "C045";
+    public static final readonly CISSCodeId c062
+                property "ads.attributeId" "3"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "C062";
+    public static final readonly CISSCodeId p001
+                property "ads.attributeId" "4"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "P001";
+    public static final readonly CISSCodeId p002
+                property "ads.attributeId" "5"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "P002";
+    public static final readonly CISSCodeId p002Copy
+                property "ads.attributeId" "6"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "P002Copy";
+    public static final readonly CISSCodeId p003
+                property "ads.attributeId" "7"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "P003";
+    public static final readonly CISSCodeId p004
+                property "ads.attributeId" "8"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "P004";
+    public static final readonly CISSCodeId p005
+                property "ads.attributeId" "9"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "P005";
+    public static final readonly CISSCodeId p006
+                property "ads.attributeId" "10"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "P006";
+    public static final readonly CISSCodeId p007
+                property "ads.attributeId" "11"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "P007";
+    public static final readonly CISSCodeId p008
+                property "ads.attributeId" "12"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "P008";
+    public static final readonly CISSCodeId p009
+                property "ads.attributeId" "13"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "P009";
+}
+
+public class Exception
+        property "ads.typeId" "24"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "Exception"
+        property "de.generated" "true"
+{
+    public string CODE
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CODE"
+                property update "true";
+    public string RULE_NAME
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "RULE_NAME"
+                property update "true";
+    public Exception(string CODE, string RULE_NAME)
+                property autoExpand "true"
+                property beanConstructor "true"
+                property groups "BALA"
+                property prototype "true";
+    public Exception()
+                property "dataio.default" "true";
+}
+
+public class Globals
+        property "ads.typeId" "28"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "Globals"
+        property "de.generated" "true"
+{
+    public SwitchIndicatorValue NY_TX_ADJ_IND
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "NY_TX_ADJ_IND"
+                property update "true";
+    public Globals(SwitchIndicatorValue NY_TX_ADJ_IND)
+                property autoExpand "true"
+                property beanConstructor "true"
+                property groups "BALA"
+                property prototype "true";
+    public Globals()
+                property "dataio.default" "true";
+}
+
+public class IT112R1
+        property "ads.typeId" "22"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "IT112R1"
+        property "de.generated" "true"
+{
+    public AmountField1 RC_LSR_CR_AMT
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "RC_LSR_CR_AMT"
+                property update "true";
+    public IT112R1(AmountField1 RC_LSR_CR_AMT)
+                property autoExpand "true"
+                property beanConstructor "true"
+                property groups "BALA"
+                property prototype "true";
+    public IT112R1()
+                property "dataio.default" "true";
+}
+
+public class IT196
+        property "ads.typeId" "14"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "IT196"
+        property "de.generated" "true"
+{
+    public AmountField1 NYS_ITZDED_AMT
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "NYS_ITZDED_AMT"
+                property update "true";
+    public IT196(AmountField1 NYS_ITZDED_AMT)
+                property autoExpand "true"
+                property beanConstructor "true"
+                property groups "BALA"
+                property prototype "true";
+    public IT196()
+                property "dataio.default" "true";
+}
+
+public class IT201
+        property "ads.typeId" "4"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "IT201"
+        property "de.generated" "true"
+{
+    public AmountField1 ALIM_AMT
+                property "ads.attributeId" "24"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ALIM_AMT"
+                property update "true";
+    public AmountField1 BUS_INC_AMT
+                property "ads.attributeId" "25"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "BUS_INC_AMT"
+                property update "true";
+    public AmountField1 CAP_GL_AMT
+                property "ads.attributeId" "26"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CAP_GL_AMT"
+                property update "true";
+    public java.util.List CISSCodeses domain 0,* class CISSCode
+                property "ads.attributeId" "6"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CISSCodeses"
+                property update "true";
+    public AmountField1 CLGE_TUIT_CR_AMT
+                property "ads.attributeId" "71"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CLGE_TUIT_CR_AMT"
+                property update "true";
+    public AmountField1 DED_AMT
+                property "ads.attributeId" "50"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "DED_AMT"
+                property update "true";
+    public AmountField1 DVND_AMT
+                property "ads.attributeId" "3"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "DVND_AMT"
+                property update "true";
+    public AmountField1 EITC_CR_AMT
+                property "ads.attributeId" "68"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "EITC_CR_AMT"
+                property update "true";
+    public AmountField1 ESC_CHLD_CR_AMT
+                property "ads.attributeId" "66"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ESC_CHLD_CR_AMT"
+                property update "true";
+    public AmountField1 FEDADJ_AMT
+                property "ads.attributeId" "35"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "FEDADJ_AMT"
+                property update "true";
+    public AmountField1 FEDAGI_AMT
+                property "ads.attributeId" "5"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "FEDAGI_AMT"
+                property update "true";
+    public AmountField1 FEDAGI_RCOMP_AMT
+                property "ads.attributeId" "79"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "FEDAGI_RCOMP_AMT"
+                property update "true";
+    public AmountField1 FRM_GL_AMT
+                property "ads.attributeId" "31"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "FRM_GL_AMT"
+                property update "true";
+    public IndicatorType15Field FS_CD
+                property "ads.attributeId" "21"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "FS_CD"
+                property update "true";
+    public AmountField1 HH_CR_AMT
+                property "ads.attributeId" "8"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "HH_CR_AMT"
+                property update "true";
+    public AmountField1 INC_B4_EXMPT_AMT
+                property "ads.attributeId" "51"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "INC_B4_EXMPT_AMT"
+                property update "true";
+    public AmountField1 INT_AMT
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "INT_AMT"
+                property update "true";
+    public AmountField1 IRA_AMT
+                property "ads.attributeId" "28"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "IRA_AMT"
+                property update "true";
+    public AmountField1 MCT_SLF_EMP_TX_AMT
+                property "ads.attributeId" "64"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "MCT_SLF_EMP_TX_AMT"
+                property update "true";
+    public AmountField1 NC_P_EITC_CR_AMT
+                property "ads.attributeId" "69"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "NC_P_EITC_CR_AMT"
+                property update "true";
+    public AmountField1 NRFND_CR_AMT
+                property "ads.attributeId" "10"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "NRFND_CR_AMT"
+                property update "true";
+    public AmountField1 NYC_EITC_CR_AMT
+                property "ads.attributeId" "74"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "NYC_EITC_CR_AMT"
+                property update "true";
+    public AmountField1 NYC_HH_CR_AMT
+                property "ads.attributeId" "53"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "NYC_HH_CR_AMT"
+                property update "true";
+    public AmountField1 NYC_NRFND_CR_AMT
+                property "ads.attributeId" "60"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "NYC_NRFND_CR_AMT"
+                property update "true";
+    public AmountField1 NYC_OTH_TX_AMT
+                property "ads.attributeId" "56"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "NYC_OTH_TX_AMT"
+                property update "true";
+    public AmountField1 NYC_PTYR_RSDT_AMT
+                property "ads.attributeId" "57"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "NYC_PTYR_RSDT_AMT"
+                property update "true";
+    public AmountField1 NYC_STAR_CR_AMT
+                property "ads.attributeId" "72"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "NYC_STAR_CR_AMT"
+                property update "true";
+    public AmountField1 NYC_STAR_REDCR_AMT
+                property "ads.attributeId" "73"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "NYC_STAR_REDCR_AMT"
+                property update "true";
+    public AmountField1 NYC_TAX_AFT_CR_AMT
+                property "ads.attributeId" "59"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "NYC_TAX_AFT_CR_AMT"
+                property update "true";
+    public AmountField1 NYC_TOT_TX_AMT
+                property "ads.attributeId" "55"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "NYC_TOT_TX_AMT"
+                property update "true";
+    public AmountField1 NYC_TX_AFT_HH_AMT
+                property "ads.attributeId" "52"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "NYC_TX_AFT_HH_AMT"
+                property update "true";
+    public AmountField1 NYC_TX_AFT_HH_AMT1
+                property "ads.attributeId" "58"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "NYC_TX_AFT_HH_AMT1"
+                property update "true";
+    public AmountField1 NYC_TX_B4CR_AMT
+                property "ads.attributeId" "54"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "NYC_TX_B4CR_AMT"
+                property update "true";
+    public AmountField1 NYC_YNK_NET_TX_AMT
+                property "ads.attributeId" "19"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "NYC_YNK_NET_TX_AMT"
+                property update "true";
+    public AmountField1 NYSAGI_AMT
+                property "ads.attributeId" "49"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "NYSAGI_AMT"
+                property update "true";
+    public AmountField1 NYS_NYC_CDCC_AMT
+                property "ads.attributeId" "67"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "NYS_NYC_CDCC_AMT"
+                property update "true";
+    public AmountField1 OTHINC_AMT
+                property "ads.attributeId" "34"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "OTHINC_AMT"
+                property update "true";
+    public AmountField1 OTH_GL_AMT
+                property "ads.attributeId" "27"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "OTH_GL_AMT"
+                property update "true";
+    public AmountField1 OTH_RFND_CR_AMT
+                property "ads.attributeId" "75"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "OTH_RFND_CR_AMT"
+                property update "true";
+    public AmountField1 PD_ORIG_RTN_AMT
+                property "ads.attributeId" "15"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "PD_ORIG_RTN_AMT"
+                property update "true";
+    public AmountField1 PNSN_AMT
+                property "ads.attributeId" "29"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "PNSN_AMT"
+                property update "true";
+    public double PR_NYC_MNTH_NMBR
+                property "ads.attributeId" "80"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "PR_NYC_MNTH_NMBR"
+                property update "true";
+    public AmountField1 RL_PROP_CR_AMT
+                property "ads.attributeId" "70"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "RL_PROP_CR_AMT"
+                property update "true";
+    public AmountField1 RNT_PRTN_AMT
+                property "ads.attributeId" "30"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "RNT_PRTN_AMT"
+                property update "true";
+    public AmountField1 RSDT_CR_AMT
+                property "ads.attributeId" "9"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "RSDT_CR_AMT"
+                property update "true";
+    public AmountField1 SALE_USE_AMT
+                property "ads.attributeId" "20"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "SALE_USE_AMT"
+                property update "true";
+    public double SP_NYC_MNTH_NMBR
+                property "ads.attributeId" "81"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "SP_NYC_MNTH_NMBR"
+                property update "true";
+    public AmountField1 SSINC_AMT
+                property "ads.attributeId" "33"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "SSINC_AMT"
+                property update "true";
+    public IndicatorType03Field STD_ITZ_IND
+                property "ads.attributeId" "22"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "STD_ITZ_IND"
+                property update "true";
+    public SwitchIndicatorValue TEMP_CISS_FAGI
+                property "ads.attributeId" "83"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "TEMP_CISS_FAGI"
+                property update "true";
+    public double TEMP_PSDT_DED_AMOUNT
+                property "ads.attributeId" "86"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "TEMP_PSDT_DED_AMOUNT"
+                property update "true";
+    public double TEMP_RPTC_CR
+                property "ads.attributeId" "88"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "TEMP_RPTC_CR"
+                property update "true";
+    public SwitchIndicatorValue TEMP_RPTC_DENIED_IND
+                property "ads.attributeId" "87"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "TEMP_RPTC_DENIED_IND"
+                property update "true";
+    public double TEMP_STND_DED_AMT
+                property "ads.attributeId" "84"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "TEMP_STND_DED_AMT"
+                property update "true";
+    public AmountField1 TOT_EST_TX_AMT
+                property "ads.attributeId" "78"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "TOT_EST_TX_AMT"
+                property update "true";
+    public AmountField1 TOT_GFT_AMT
+                property "ads.attributeId" "65"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "TOT_GFT_AMT"
+                property update "true";
+    public AmountField1 TOT_NRFNDCR_AMT
+                property "ads.attributeId" "11"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "TOT_NRFNDCR_AMT"
+                property update "true";
+    public AmountField1 TOT_NYC_WTHLD_AMT
+                property "ads.attributeId" "76"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "TOT_NYC_WTHLD_AMT"
+                property update "true";
+    public AmountField1 TOT_PAY_AMT
+                property "ads.attributeId" "17"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "TOT_PAY_AMT"
+                property update "true";
+    public AmountField1 TOT_TX_AMT
+                property "ads.attributeId" "18"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "TOT_TX_AMT"
+                property update "true";
+    public AmountField1 TOT_WTHLD_AMT
+                property "ads.attributeId" "14"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "TOT_WTHLD_AMT"
+                property update "true";
+    public AmountField1 TOT_YNK_WTHLD_AMT
+                property "ads.attributeId" "77"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "TOT_YNK_WTHLD_AMT"
+                property update "true";
+    public AmountField1 TXBL_INC_AMT
+                property "ads.attributeId" "23"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "TXBL_INC_AMT"
+                property update "true";
+    public AmountField1 TXBL_RFND_AMT
+                property "ads.attributeId" "4"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "TXBL_RFND_AMT"
+                property update "true";
+    public AmountField1 TX_AFT_NRFNDCR_AMT
+                property "ads.attributeId" "13"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "TX_AFT_NRFNDCR_AMT"
+                property update "true";
+    public AmountField1 TX_B4CR_AMT
+                property "ads.attributeId" "12"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "TX_B4CR_AMT"
+                property update "true";
+    public AmountField1 TX_GFT_AMT
+                property "ads.attributeId" "16"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "TX_GFT_AMT"
+                property update "true";
+    public AmountField1 TX_UNEMP_AMT
+                property "ads.attributeId" "32"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "TX_UNEMP_AMT"
+                property update "true";
+    public AmountField1 WG_AMT
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "WG_AMT"
+                property update "true";
+    public AmountField1 YNK_NR_TX_AMT
+                property "ads.attributeId" "62"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "YNK_NR_TX_AMT"
+                property update "true";
+    public AmountField1 YNK_OTH_TX_AMT
+                property "ads.attributeId" "61"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "YNK_OTH_TX_AMT"
+                property update "true";
+    public AmountField1 YNK_RSDT_TX_AMT
+                property "ads.attributeId" "63"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "YNK_RSDT_TX_AMT"
+                property update "true";
+    public AmountField1 a_CLGE_SAVE_AMT
+                property "ads.attributeId" "39"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "A_CLGE_SAVE_AMT"
+                property update "true";
+    public AmountField1 a_INTINC_AMT
+                property "ads.attributeId" "37"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "A_INTINC_AMT"
+                property update "true";
+    public AmountField1 a_OTH_AMT
+                property "ads.attributeId" "40"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "A_OTH_AMT"
+                property update "true";
+    public AmountField1 a_PBEMP_AMT
+                property "ads.attributeId" "38"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "A_PBEMP_AMT"
+                property update "true";
+    public AmountField1 a_SUBTL_AMT
+                property "ads.attributeId" "36"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "A_SUBTL_AMT"
+                property update "true";
+    public Globals globals
+                property "ads.attributeId" "82"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "globals"
+                property update "true";
+    public AmountField1 s_EXCL_AMT
+                property "ads.attributeId" "45"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "S_EXCL_AMT"
+                property update "true";
+    public AmountField1 s_GBOND_AMT
+                property "ads.attributeId" "44"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "S_GBOND_AMT"
+                property update "true";
+    public AmountField1 s_OTH_AMT
+                property "ads.attributeId" "47"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "S_OTH_AMT"
+                property update "true";
+    public AmountField1 s_PNSN_AMT
+                property "ads.attributeId" "42"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "S_PNSN_AMT"
+                property update "true";
+    public AmountField1 s_SLGE_EARN_AMT
+                property "ads.attributeId" "46"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "S_SLGE_EARN_AMT"
+                property update "true";
+    public AmountField1 s_SUBTL_AMT
+                property "ads.attributeId" "48"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "S_SUBTL_AMT"
+                property update "true";
+    public AmountField1 s_TXBL_SS_AMT
+                property "ads.attributeId" "43"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "S_TXBL_SS_AMT"
+                property update "true";
+    public AmountField1 s_TX_RFND_AMT
+                property "ads.attributeId" "41"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "S_TX_RFND_AMT"
+                property update "true";
+    public IT201(AmountField1 ALIM_AMT, 
+        AmountField1 BUS_INC_AMT, 
+        AmountField1 CAP_GL_AMT, 
+        java.util.List CISSCodeses domain 0,* class CISSCode, 
+        AmountField1 CLGE_TUIT_CR_AMT, 
+        AmountField1 DED_AMT, 
+        AmountField1 DVND_AMT, 
+        AmountField1 EITC_CR_AMT, 
+        AmountField1 ESC_CHLD_CR_AMT, 
+        AmountField1 FEDADJ_AMT, 
+        AmountField1 FEDAGI_AMT, 
+        AmountField1 FEDAGI_RCOMP_AMT, 
+        AmountField1 FRM_GL_AMT, 
+        IndicatorType15Field FS_CD, 
+        AmountField1 HH_CR_AMT, 
+        AmountField1 INC_B4_EXMPT_AMT, 
+        AmountField1 INT_AMT, 
+        AmountField1 IRA_AMT, 
+        AmountField1 MCT_SLF_EMP_TX_AMT, 
+        AmountField1 NC_P_EITC_CR_AMT, 
+        AmountField1 NRFND_CR_AMT, 
+        AmountField1 NYC_EITC_CR_AMT, 
+        AmountField1 NYC_HH_CR_AMT, 
+        AmountField1 NYC_NRFND_CR_AMT, 
+        AmountField1 NYC_OTH_TX_AMT, 
+        AmountField1 NYC_PTYR_RSDT_AMT, 
+        AmountField1 NYC_STAR_CR_AMT, 
+        AmountField1 NYC_STAR_REDCR_AMT, 
+        AmountField1 NYC_TAX_AFT_CR_AMT, 
+        AmountField1 NYC_TOT_TX_AMT, 
+        AmountField1 NYC_TX_AFT_HH_AMT, 
+        AmountField1 NYC_TX_AFT_HH_AMT1, 
+        AmountField1 NYC_TX_B4CR_AMT, 
+        AmountField1 NYC_YNK_NET_TX_AMT, 
+        AmountField1 NYSAGI_AMT, 
+        AmountField1 NYS_NYC_CDCC_AMT, 
+        AmountField1 OTHINC_AMT, 
+        AmountField1 OTH_GL_AMT, 
+        AmountField1 OTH_RFND_CR_AMT, 
+        AmountField1 PD_ORIG_RTN_AMT, 
+        AmountField1 PNSN_AMT, 
+        double PR_NYC_MNTH_NMBR, 
+        AmountField1 RL_PROP_CR_AMT, 
+        AmountField1 RNT_PRTN_AMT, 
+        AmountField1 RSDT_CR_AMT, 
+        AmountField1 SALE_USE_AMT, 
+        double SP_NYC_MNTH_NMBR, 
+        AmountField1 SSINC_AMT, 
+        IndicatorType03Field STD_ITZ_IND, 
+        SwitchIndicatorValue TEMP_CISS_FAGI, 
+        double TEMP_PSDT_DED_AMOUNT, 
+        double TEMP_RPTC_CR, 
+        SwitchIndicatorValue TEMP_RPTC_DENIED_IND, 
+        double TEMP_STND_DED_AMT, 
+        AmountField1 TOT_EST_TX_AMT, 
+        AmountField1 TOT_GFT_AMT, 
+        AmountField1 TOT_NRFNDCR_AMT, 
+        AmountField1 TOT_NYC_WTHLD_AMT, 
+        AmountField1 TOT_PAY_AMT, 
+        AmountField1 TOT_TX_AMT, 
+        AmountField1 TOT_WTHLD_AMT, 
+        AmountField1 TOT_YNK_WTHLD_AMT, 
+        AmountField1 TXBL_INC_AMT, 
+        AmountField1 TXBL_RFND_AMT, 
+        AmountField1 TX_AFT_NRFNDCR_AMT, 
+        AmountField1 TX_B4CR_AMT, 
+        AmountField1 TX_GFT_AMT, 
+        AmountField1 TX_UNEMP_AMT, 
+        AmountField1 WG_AMT, 
+        AmountField1 YNK_NR_TX_AMT, 
+        AmountField1 YNK_OTH_TX_AMT, 
+        AmountField1 YNK_RSDT_TX_AMT, 
+        AmountField1 a_CLGE_SAVE_AMT, 
+        AmountField1 a_INTINC_AMT, 
+        AmountField1 a_OTH_AMT, 
+        AmountField1 a_PBEMP_AMT, 
+        AmountField1 a_SUBTL_AMT, 
+        Globals globals, 
+        AmountField1 s_EXCL_AMT, 
+        AmountField1 s_GBOND_AMT, 
+        AmountField1 s_OTH_AMT, 
+        AmountField1 s_PNSN_AMT, 
+        AmountField1 s_SLGE_EARN_AMT, 
+        AmountField1 s_SUBTL_AMT, 
+        AmountField1 s_TXBL_SS_AMT, 
+        AmountField1 s_TX_RFND_AMT)
+                property autoExpand "true"
+                property beanConstructor "true"
+                property groups "BALA"
+                property prototype "true";
+    public IT201()
+                property "dataio.default" "true";
+    public void addTo_CISSCodeses(CISSCode CISSCodeses)
+                property collectionAttribute "CISSCodeses"
+                property update "true";
+    public void clear_CISSCodeses()
+                property collectionAttribute "CISSCodeses"
+                property update "true";
+    public void removeFrom_CISSCodeses(CISSCode CISSCodeses)
+                property collectionAttribute "CISSCodeses"
+                property update "true";
+    public void set_CISSCodeses(java.util.Collection CISSCodeses domain 0,* class CISSCode)
+                property collectionAttribute "CISSCodeses"
+                property update "true";
+}
+
+public class IT201X1
+        property "ads.typeId" "18"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "IT201X1"
+        property "de.generated" "true"
+{
+    public AmountField1 FEDAGI_RCOMP_AMT
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "FEDAGI_RCOMP_AMT"
+                property update "true";
+    public IT201X1(AmountField1 FEDAGI_RCOMP_AMT)
+                property autoExpand "true"
+                property beanConstructor "true"
+                property groups "BALA"
+                property prototype "true";
+    public IT201X1()
+                property "dataio.default" "true";
+}
+
+public class IT2141
+        property "ads.typeId" "17"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "IT2141"
+        property "de.generated" "true"
+{
+    public java.util.List CISSCodes domain 0,* class CISSCode
+                property "ads.attributeId" "9"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CISSCodes"
+                property update "true";
+    public AmountField1 FEDAGI_RCOMP_AMT
+                property "ads.attributeId" "4"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "FEDAGI_RCOMP_AMT"
+                property update "true";
+    public AmountField1 r_CR_LMT_AMT
+                property "ads.attributeId" "8"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "R_CR_LMT_AMT"
+                property update "true";
+    public AmountField1 r_GRSS_INC_R_AMT
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "R_GRSS_INC_R_AMT"
+                property update "true";
+    public AmountField1 r_RL_PROP_CR_AMT
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "R_RL_PROP_CR_AMT"
+                property update "true";
+    public AmountField1 r_RL_PROP_TX_AMT
+                property "ads.attributeId" "5"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "R_RL_PROP_TX_AMT"
+                property update "true";
+    public IndicatorType03Field r_RSDT_IND
+                property "ads.attributeId" "3"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "R_RSDT_IND"
+                property update "true";
+    public AmountField1 r_TX_AVL_CR_AMT
+                property "ads.attributeId" "6"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "R_TX_AVL_CR_AMT"
+                property update "true";
+    public AmountField1 r_TX_EXMPT_AMT
+                property "ads.attributeId" "7"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "R_TX_EXMPT_AMT"
+                property update "true";
+    public IT2141(java.util.List CISSCodes domain 0,* class CISSCode, 
+        AmountField1 FEDAGI_RCOMP_AMT, 
+        AmountField1 r_CR_LMT_AMT, 
+        AmountField1 r_GRSS_INC_R_AMT, 
+        AmountField1 r_RL_PROP_CR_AMT, 
+        AmountField1 r_RL_PROP_TX_AMT, 
+        IndicatorType03Field r_RSDT_IND, 
+        AmountField1 r_TX_AVL_CR_AMT, 
+        AmountField1 r_TX_EXMPT_AMT)
+                property autoExpand "true"
+                property beanConstructor "true"
+                property groups "BALA"
+                property prototype "true";
+    public IT2141()
+                property "dataio.default" "true";
+    public void addTo_CISSCodes(CISSCode CISSCodes)
+                property collectionAttribute "CISSCodes"
+                property update "true";
+    public void clear_CISSCodes()
+                property collectionAttribute "CISSCodes"
+                property update "true";
+    public void removeFrom_CISSCodes(CISSCode CISSCodes)
+                property collectionAttribute "CISSCodes"
+                property update "true";
+    public void set_CISSCodes(java.util.Collection CISSCodes domain 0,* class CISSCode)
+                property collectionAttribute "CISSCodes"
+                property update "true";
+}
+
+public class IT2271
+        property "ads.typeId" "23"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "IT2271"
+        property "de.generated" "true"
+{
+    public AmountField1 TOT_GFT_AMT
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "TOT_GFT_AMT"
+                property update "true";
+    public IT2271(AmountField1 TOT_GFT_AMT)
+                property autoExpand "true"
+                property beanConstructor "true"
+                property groups "BALA"
+                property prototype "true";
+    public IT2271()
+                property "dataio.default" "true";
+}
+
+public class IT229
+        property "ads.typeId" "27"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "IT229"
+        property "de.generated" "true"
+{
+    public java.util.List QRPT_ROWs domain 0,* class QRPTRow
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "QRPT_ROWs"
+                property update "true";
+    public AmountField1 RPTR_QRPT_PD_AMT
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "RPTR_QRPT_PD_AMT"
+                property update "true";
+    public IT229(java.util.List QRPT_ROWs domain 0,* class QRPTRow, 
+        AmountField1 RPTR_QRPT_PD_AMT)
+                property autoExpand "true"
+                property beanConstructor "true"
+                property groups "BALA"
+                property prototype "true";
+    public IT229()
+                property "dataio.default" "true";
+    public void addTo_QRPT_ROWs(QRPTRow QRPT_ROWs)
+                property collectionAttribute "QRPT_ROWs"
+                property update "true";
+    public void clear_QRPT_ROWs()
+                property collectionAttribute "QRPT_ROWs"
+                property update "true";
+    public void removeFrom_QRPT_ROWs(QRPTRow QRPT_ROWs)
+                property collectionAttribute "QRPT_ROWs"
+                property update "true";
+    public void set_QRPT_ROWs(java.util.Collection QRPT_ROWs domain 0,* class QRPTRow)
+                property collectionAttribute "QRPT_ROWs"
+                property update "true";
+}
+
+public class IT558
+        property "ads.typeId" "5"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "IT558"
+        property "de.generated" "true"
+{
+    public AmountField1 ADJ_TOT_ADD_AMT
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ADJ_TOT_ADD_AMT"
+                property update "true";
+    public AmountField1 ADJ_TOT_SUBT_AMT
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ADJ_TOT_SUBT_AMT"
+                property update "true";
+    public IT558(AmountField1 ADJ_TOT_ADD_AMT, AmountField1 ADJ_TOT_SUBT_AMT)
+                property autoExpand "true"
+                property beanConstructor "true"
+                property groups "BALA"
+                property prototype "true";
+    public IT558()
+                property "dataio.default" "true";
+}
+
+public class IndicatorType03Field
+        property "ads.typeId" "6"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "IndicatorType03Field"
+        property "de.generated" "true"
+{
+    public IndicatorType03Value claimed
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "claimed"
+                property update "true";
+    public IndicatorType03Value value
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "value"
+                property update "true";
+    public IndicatorType03Field(IndicatorType03Value claimed, IndicatorType03Value value)
+                property autoExpand "true"
+                property beanConstructor "true"
+                property groups "BALA"
+                property prototype "true";
+    public IndicatorType03Field()
+                property "dataio.default" "true";
+}
+
+public class IndicatorType03Value
+        extends java.lang.Enum
+        property "ads.typeId" "13"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "IndicatorType03Value"
+        property "de.generated" "true"
+{
+    domain {static $, static $1}
+    public static final readonly IndicatorType03Value $
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "1";
+    public static final readonly IndicatorType03Value $1
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "2";
+}
+
+public class IndicatorType13Field
+        property "ads.typeId" "15"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "IndicatorType13Field"
+        property "de.generated" "true"
+{
+    public IndicatorType13Value claimed
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "claimed"
+                property update "true";
+    public IndicatorType13Value value
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "value"
+                property update "true";
+    public IndicatorType13Field(IndicatorType13Value claimed, IndicatorType13Value value)
+                property autoExpand "true"
+                property beanConstructor "true"
+                property groups "BALA"
+                property prototype "true";
+    public IndicatorType13Field()
+                property "dataio.default" "true";
+}
+
+public class IndicatorType13Value
+        extends java.lang.Enum
+        property "ads.typeId" "12"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "IndicatorType13Value"
+        property "de.generated" "true"
+{
+    domain {static $, static $1, static $2}
+    public static final readonly IndicatorType13Value $
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "1";
+    public static final readonly IndicatorType13Value $1
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "2";
+    public static final readonly IndicatorType13Value $2
+                property "ads.attributeId" "3"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "3";
+}
+
+public class IndicatorType15Field
+        property "ads.typeId" "20"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "IndicatorType15Field"
+        property "de.generated" "true"
+{
+    public java.lang.Long claimed
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "claimed"
+                property update "true";
+    public java.lang.Long value
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "value"
+                property update "true";
+    public IndicatorType15Field(java.lang.Long claimed, java.lang.Long value)
+                property autoExpand "true"
+                property beanConstructor "true"
+                property groups "BALA"
+                property prototype "true";
+    public IndicatorType15Field()
+                property "dataio.default" "true";
+}
+
+public class IndicatorType15Value
+        extends java.lang.Enum
+        property "ads.typeId" "21"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "IndicatorType15Value"
+        property "de.generated" "true"
+{
+    domain {static $, static $1, static $2, static $3, static $4}
+    public static final readonly IndicatorType15Value $
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "1";
+    public static final readonly IndicatorType15Value $1
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "2";
+    public static final readonly IndicatorType15Value $2
+                property "ads.attributeId" "3"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "3";
+    public static final readonly IndicatorType15Value $3
+                property "ads.attributeId" "4"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "4";
+    public static final readonly IndicatorType15Value $4
+                property "ads.attributeId" "5"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "5";
+}
+
+public class PITReturn
+        property "ads.typeId" "25"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "PITReturn"
+        property "de.generated" "true"
+{
+    public java.util.List IT112Rs domain 0,* class IT112R1
+                property "ads.attributeId" "9"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "IT112Rs"
+                property update "true";
+    public IT196 IT196
+                property "ads.attributeId" "4"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "IT196"
+                property update "true";
+    public IT201 IT201
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "IT201"
+                property update "true";
+    public IT201X1 IT201X
+                property "ads.attributeId" "7"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "IT201X"
+                property update "true";
+    public IT2141 IT214
+                property "ads.attributeId" "6"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "IT214"
+                property update "true";
+    public IT2271 IT227
+                property "ads.attributeId" "10"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "IT227"
+                property update "true";
+    public IT558 IT558
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "IT558"
+                property update "true";
+    public java.util.List exceptionses domain 0,* class Exception
+                property "ads.attributeId" "11"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "exceptionses"
+                property update "true";
+    public ReturnHeader header
+                property "ads.attributeId" "8"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "header"
+                property update "true";
+    public gov.ny.its.pit.refdata.ReferenceData referenceData
+                property "ads.attributeId" "5"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "referenceData"
+                property update "true";
+    public Scratchpad scratchpad
+                property "ads.attributeId" "3"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "scratchpad"
+                property update "true";
+    public PITReturn(java.util.List IT112Rs domain 0,* class IT112R1, 
+        IT196 IT196, 
+        IT201 IT201, 
+        IT201X1 IT201X, 
+        IT2141 IT214, 
+        IT2271 IT227, 
+        IT558 IT558, 
+        java.util.List exceptionses domain 0,* class Exception, 
+        ReturnHeader header, 
+        gov.ny.its.pit.refdata.ReferenceData referenceData, 
+        Scratchpad scratchpad)
+                property autoExpand "true"
+                property beanConstructor "true"
+                property groups "BALA"
+                property prototype "true";
+    public PITReturn()
+                property "dataio.default" "true";
+    public void addTo_IT112Rs(IT112R1 IT112Rs)
+                property collectionAttribute "IT112Rs"
+                property update "true";
+    public void addTo_exceptionses(Exception exceptionses)
+                property collectionAttribute "exceptionses"
+                property update "true";
+    public void clear_IT112Rs()
+                property collectionAttribute "IT112Rs"
+                property update "true";
+    public void clear_exceptionses()
+                property collectionAttribute "exceptionses"
+                property update "true";
+    public void removeFrom_IT112Rs(IT112R1 IT112Rs)
+                property collectionAttribute "IT112Rs"
+                property update "true";
+    public void removeFrom_exceptionses(Exception exceptionses)
+                property collectionAttribute "exceptionses"
+                property update "true";
+    public void set_IT112Rs(java.util.Collection IT112Rs domain 0,* class IT112R1)
+                property collectionAttribute "IT112Rs"
+                property update "true";
+    public void set_exceptionses(java.util.Collection exceptionses domain 0,* class Exception)
+                property collectionAttribute "exceptionses"
+                property update "true";
+}
+
+public class QRPTRow
+        property "ads.typeId" "26"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "QRPTRow"
+        property "de.generated" "true"
+{
+    public double ALLOC_PCT
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ALLOC_PCT"
+                property update "true";
+    public double MPLY_F_BY_A_AMT
+                property "ads.attributeId" "7"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "MPLY_F_BY_A_AMT"
+                property update "true";
+    public double PI_PD_RES_AMT
+                property "ads.attributeId" "3"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "PI_PD_RES_AMT"
+                property update "true";
+    public double PI_STAR_CR_AMT
+                property "ads.attributeId" "5"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "PI_STAR_CR_AMT"
+                property update "true";
+    public double RP_TX_PD_AMT
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "RP_TX_PD_AMT"
+                property update "true";
+    public double STAR_CR_SCH_TX_AMT
+                property "ads.attributeId" "4"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "STAR_CR_SCH_TX_AMT"
+                property update "true";
+    public double STAR_SUB_RP_AMT
+                property "ads.attributeId" "6"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "STAR_SUB_RP_AMT"
+                property update "true";
+    public QRPTRow(double ALLOC_PCT, double MPLY_F_BY_A_AMT, double PI_PD_RES_AMT, double PI_STAR_CR_AMT, double RP_TX_PD_AMT, double STAR_CR_SCH_TX_AMT, double STAR_SUB_RP_AMT)
+                property autoExpand "true"
+                property beanConstructor "true"
+                property groups "BALA"
+                property prototype "true";
+    public QRPTRow()
+                property "dataio.default" "true";
+}
+
+public class ReturnHeader
+        property "ads.typeId" "19"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "ReturnHeader"
+        property "de.generated" "true"
+{
+    public IndicatorType13Field NYC_LIAB_IND
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "NYC_LIAB_IND"
+                property update "true";
+    public ReturnHeader(IndicatorType13Field NYC_LIAB_IND)
+                property autoExpand "true"
+                property beanConstructor "true"
+                property groups "BALA"
+                property prototype "true";
+    public ReturnHeader()
+                property "dataio.default" "true";
+}
+
+public class Scratchpad
+        property "ads.typeId" "3"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "Scratchpad"
+        property "de.generated" "true"
+{
+    public AdjustedReasonCodeId $14$ARC
+                property "ads.attributeId" "13"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "214-ARC"
+                property update "true";
+    public double $14$COUNTER
+                property "ads.attributeId" "14"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "214-COUNTER"
+                property update "true";
+    public SwitchIndicatorValue CISS_FAGI
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CISS_FAGI"
+                property update "true";
+    public double DEP_EXMPT_AMT
+                property "ads.attributeId" "9"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "DEP_EXMPT_AMT"
+                property update "true";
+    public SwitchIndicatorValue DTF_AMENDED_IND
+                property "ads.attributeId" "11"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "DTF_AMENDED_IND"
+                property update "true";
+    public AdjustedReasonCodeId GLOB$214$ARC
+                property "ads.attributeId" "21"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "GLOB-214-ARC"
+                property update "true";
+    public double GLOB$214$COUNTER
+                property "ads.attributeId" "19"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "GLOB-214-COUNTER"
+                property update "true";
+    public SwitchIndicatorValue IT201_DTF_AMENDED
+                property "ads.attributeId" "5"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "IT201_DTF_AMENDED"
+                property update "true";
+    public double IT201_NYC_STAR_INC_AMT
+                property "ads.attributeId" "6"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "IT201_NYC_STAR_INC_AMT"
+                property update "true";
+    public double IT201_OVER_PAID_AMT
+                property "ads.attributeId" "7"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "IT201_OVER_PAID_AMT"
+                property update "true";
+    public double IT201_STND_DED_AMT
+                property "ads.attributeId" "8"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "IT201_STND_DED_AMT"
+                property update "true";
+    public SwitchIndicatorValue IT201_TEMP_NY_TX_ADJ_IND
+                property "ads.attributeId" "23"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "IT201_TEMP_NY_TX_ADJ_IND"
+                property update "true";
+    public double IT201_TXB_INC
+                property "ads.attributeId" "10"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "IT201_TXB_INC"
+                property update "true";
+    public SwitchIndicatorValue IT214_CR_DENIED_IND
+                property "ads.attributeId" "15"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "IT214_CR_DENIED_IND"
+                property update "true";
+    public double IT214_FAGI
+                property "ads.attributeId" "16"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "IT214_FAGI"
+                property update "true";
+    public double IT214_LINE18
+                property "ads.attributeId" "17"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "IT214_LINE18"
+                property update "true";
+    public double IT214_LINE30
+                property "ads.attributeId" "18"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "IT214_LINE30"
+                property update "true";
+    public double MID_TAX_INC_NMBR
+                property "ads.attributeId" "12"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "MID_TAX_INC_NMBR"
+                property update "true";
+    public SwitchIndicatorValue NYC201_DENIED
+                property "ads.attributeId" "3"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "NYC201_DENIED"
+                property update "true";
+    public double PSDT_DED_AMOUNT
+                property "ads.attributeId" "26"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "PSDT_DED_AMOUNT"
+                property update "true";
+    public double REF_RPTC_RATE
+                property "ads.attributeId" "20"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "REF_RPTC_RATE"
+                property update "true";
+    public double RES_CR
+                property "ads.attributeId" "22"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "RES_CR"
+                property update "true";
+    public double RPTC_CR
+                property "ads.attributeId" "25"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "RPTC_CR"
+                property update "true";
+    public SwitchIndicatorValue RPTC_DENIED_IND
+                property "ads.attributeId" "24"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "RPTC_DENIED_IND"
+                property update "true";
+    public double TOT_NYS_TAX
+                property "ads.attributeId" "4"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "TOT_NYS_TAX"
+                property update "true";
+    public double TOT_TX
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "TOT_TX"
+                property update "true";
+    public Scratchpad(AdjustedReasonCodeId $14$ARC, 
+        double $14$COUNTER, 
+        SwitchIndicatorValue CISS_FAGI, 
+        double DEP_EXMPT_AMT, 
+        SwitchIndicatorValue DTF_AMENDED_IND, 
+        AdjustedReasonCodeId GLOB$214$ARC, 
+        double GLOB$214$COUNTER, 
+        SwitchIndicatorValue IT201_DTF_AMENDED, 
+        double IT201_NYC_STAR_INC_AMT, 
+        double IT201_OVER_PAID_AMT, 
+        double IT201_STND_DED_AMT, 
+        SwitchIndicatorValue IT201_TEMP_NY_TX_ADJ_IND, 
+        double IT201_TXB_INC, 
+        SwitchIndicatorValue IT214_CR_DENIED_IND, 
+        double IT214_FAGI, 
+        double IT214_LINE18, 
+        double IT214_LINE30, 
+        double MID_TAX_INC_NMBR, 
+        SwitchIndicatorValue NYC201_DENIED, 
+        double PSDT_DED_AMOUNT, 
+        double REF_RPTC_RATE, 
+        double RES_CR, 
+        double RPTC_CR, 
+        SwitchIndicatorValue RPTC_DENIED_IND, 
+        double TOT_NYS_TAX, 
+        double TOT_TX)
+                property autoExpand "true"
+                property beanConstructor "true"
+                property groups "BALA"
+                property prototype "true";
+    public Scratchpad()
+                property "dataio.default" "true";
+}
+
+public class SwitchIndicatorValue
+        extends java.lang.Enum
+        property "ads.typeId" "7"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "SwitchIndicatorValue"
+        property "de.generated" "true"
+{
+    domain {static absent, static present}
+    public static final readonly SwitchIndicatorValue absent
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "Absent";
+    public static final readonly SwitchIndicatorValue present
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "Present";
+}
+

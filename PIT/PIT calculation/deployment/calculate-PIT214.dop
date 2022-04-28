@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionservice:Operation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" rulesetName="function" usingRuleflow="true" ruleflowName="PIT214 return calculation" targetRuleProjectName="PIT calculation">
+  <name>calculate-PIT214</name>
+  <uuid>07829ac4-c8c9-4876-bcb3-df18d7382a2b</uuid>
+  <description><![CDATA[]]></description>
+  <referencedVariables variableName="IT201" variableSetName="PIT return parameters">
+    <variableSet href="../rules/PIT%20return%20parameters.var#8038f44a-19e7-4e23-b0ca-b2f4f2929a20"/>
+  </referencedVariables>
+  <referencedVariables variableName="IT214" variableSetName="PIT return parameters" direction="IN_OUT">
+    <variableSet href="../rules/PIT%20return%20parameters.var#8038f44a-19e7-4e23-b0ca-b2f4f2929a20"/>
+  </referencedVariables>
+  <referencedVariables variableName="IT201X" variableSetName="PIT return parameters">
+    <variableSet href="../rules/PIT%20return%20parameters.var#8038f44a-19e7-4e23-b0ca-b2f4f2929a20"/>
+  </referencedVariables>
+  <ruleflow href="../rules/PIT214%20return%20calculation.rfl#9212ef7e-49bc-4894-a339-8b3690d76dc3"/>
+  <targetRuleProject href="../../PIT%20calculation#b56b9da0-a556-4f67-828e-7d222933dcb7"/>
+  <tags key="operationDescription">
+    <value><![CDATA[""]]></value>
+  </tags>
+  <tags key="operationName">
+    <value><![CDATA["calculatePIT214"]]></value>
+  </tags>
+  <tags key="exposedAtRuntime">
+    <value><![CDATA[true]]></value>
+  </tags>
+</com.ibm.rules.studio.model.decisionservice:Operation>

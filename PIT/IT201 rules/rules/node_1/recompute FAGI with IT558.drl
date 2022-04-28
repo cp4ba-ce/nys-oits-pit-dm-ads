@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>recompute FAGI with IT558</name>
+  <uuid>1a923183-84c0-4826-bb7d-3d8972b5d4dd</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[if
+    IT558 is not null
+    and there is no CISS Code in the CISS Codes of IT201 where the id of this CISS Code is C018, 
+then
+	set the value of the FEDAGI_RCOMP_AMT of decision to 
+    		the value of the FEDADJ_AMT of IT201 + 
+            the value of the ADJ_TOT_ADD_AMT of IT558 - 
+            the value of the ADJ_TOT_SUBT_AMT of IT558;  ]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

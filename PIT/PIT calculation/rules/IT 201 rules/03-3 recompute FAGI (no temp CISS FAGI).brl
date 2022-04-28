@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>03-3 recompute FAGI (no temp CISS FAGI)</name>
+  <uuid>37759e3e-2296-4a39-b90d-58869decbc93</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[if
+    IT558 is not null
+    and there is no CISS Code in the CISS Codes of IT201 where the id of this CISS Code is C018, 
+    and the CISS_FAGI of scratchpad is Absent 
+then
+	set the value of the FEDAGI_RCOMP_AMT of IT201 to 
+    		max ( the claimed of the FEDAGI_RCOMP_AMT of IT201 , the value of the FEDAGI_AMT of IT201 ); ]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>28 compute TOT_PAY_AMT</name>
+  <uuid>e96411b1-3b27-4076-bf75-588357d03c3a</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[then
+	set the value of the TOT_PAY_AMT of IT201 to 
+    		the value of the ESC_CHLD_CR_AMT of IT201 + 
+        	the value of the NYS_NYC_CDCC_AMT of IT201 + 
+        	the value of the EITC_CR_AMT of IT201 +
+        	the value of the NC_P_EITC_CR_AMT of IT201 +
+            the value of the RL_PROP_CR_AMT of IT201 +
+            the value of the CLGE_TUIT_CR_AMT of IT201 +
+            the value of the NYC_STAR_CR_AMT of IT201 +
+            the value of the NYC_STAR_REDCR_AMT of IT201 +
+            the value of the NYC_EITC_CR_AMT of IT201 +
+            the value of the OTH_RFND_CR_AMT of IT201 +
+            the value of the TOT_WTHLD_AMT of IT201 +
+            the value of the TOT_NYC_WTHLD_AMT of IT201 +
+            the value of the TOT_YNK_WTHLD_AMT of IT201 +
+            the value of the TOT_EST_TX_AMT of IT201 + 
+            the value of the PD_ORIG_RTN_AMT of IT201  ;  ]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

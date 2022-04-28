@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.ruleflow:RuleFlow xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.ruleflow="http://ilog.rules.studio/model/ruleflow.ecore">
+  <name>PIT201 return calculation</name>
+  <uuid>f4fb72cc-d91d-400b-8216-d2f0273a531f</uuid>
+  <locale>en_US</locale>
+  <rfModel><Ruleflow xmlns="http://schemas.ilog.com/Rules/7.0/Ruleflow">
+    <Body>
+        <TaskList>
+            <StartTask Identifier="task_0"/>
+            <RuleTask ExecutionMode="Sequential" ExitCriteria="None" Identifier="task_1" Ordering="Default">
+                <RuleList>
+                    <Rule Uuid="20032311-1fa7-47ae-ae1e-03f6b997d777"/>
+                    <Rule Uuid="466ae1d3-0186-4765-99c1-a273453fa396"/>
+                    <Rule Uuid="782260e2-1ecd-41a6-8c7e-fb9d3b5d0d92"/>
+                    <Rule Uuid="3ccd057d-4105-4ae2-afdc-6bb1a522e9c9"/>
+                    <Rule Uuid="37759e3e-2296-4a39-b90d-58869decbc93"/>
+                    <Rule Uuid="62843826-d978-4a57-b100-101e2ea31ccc"/>
+                    <Rule Uuid="68a5aa91-dd88-41dc-810b-4874213707a6"/>
+                    <Rule Uuid="d2b7cef9-d3dc-4f17-a062-b1f58a803a77"/>
+                    <Rule Uuid="b34fadc3-2435-4d94-8dc3-52f813c69a4d"/>
+                    <Rule Uuid="a3f1c08b-5011-4dc5-8968-8095dd1b63d6"/>
+                    <Rule Uuid="6ae9b8a9-7190-438a-8115-26e263230d50"/>
+                    <Rule Uuid="22e61f68-f09b-46a4-9a1a-cfa4b8758d02"/>
+                    <Rule Uuid="93460461-116f-4205-ba4d-100e546815d9"/>
+                    <Rule Uuid="caa7d83e-9356-4746-9a50-d23ced5cf6ed"/>
+                    <Rule Uuid="9af9df30-2019-4f61-aa51-462728086785"/>
+                    <Rule Uuid="26b88863-1d0a-41bb-a13b-68dbcfc8fb98"/>
+                    <Rule Uuid="8eaff7ff-2e28-4cbb-aa2c-239a65901cb5"/>
+                    <Rule Uuid="4ccbf21c-b8d9-4240-8988-c79ca8b6411c"/>
+                    <Rule Uuid="a6545be4-a9b4-4aef-a1bb-900bd5585af0"/>
+                    <Rule Uuid="73bb7530-17e6-4f6d-bf94-14509475b9d1"/>
+                    <Rule Uuid="ce988291-c641-4048-8f32-f8ac2ee2d391"/>
+                    <Rule Uuid="c0071c15-ae42-49cd-bc0c-e686117b2159"/>
+                    <Rule Uuid="11ee6b1e-d2a1-4edc-8fee-03cf98ecbba4"/>
+                    <Rule Uuid="e3201e4f-4511-4d7a-b03f-2058da48b494"/>
+                    <Rule Uuid="aabacf5d-07a6-4a33-b208-0f0713cb0e12"/>
+                    <Rule Uuid="4d91a1b1-bc6b-4f86-87df-6d1798e4f142"/>
+                    <Rule Uuid="13b6337c-1d7a-4a3f-b06d-686f7d961a9e"/>
+                    <Rule Uuid="37dc1478-6b00-48e9-8469-ce66698d4e33"/>
+                    <Rule Uuid="5bc5b58f-654f-4362-a413-46dc9c791b1c"/>
+                    <Rule Uuid="1d1b5dd8-9a46-48db-88c9-e7e4093dba10"/>
+                    <Rule Uuid="0de9116b-4f7d-4f03-ae87-c41ff9082895"/>
+                    <Rule Uuid="28cb4579-97a0-4dba-bb47-c3daf41cadef"/>
+                    <Rule Uuid="9b72d286-31d7-4cb0-8a4e-e7e44aab504b"/>
+                    <Rule Uuid="7933a043-5809-4957-9e0b-07ee114fbe45"/>
+                    <Rule Uuid="dd5a554c-9ebd-4dcc-9ee2-abceed0020fa"/>
+                    <Rule Uuid="420b5ded-3cf4-44d7-ab3d-c0dbf81e990d"/>
+                    <Rule Uuid="f7c80911-d892-48cf-8e52-23881d401669"/>
+                </RuleList>
+            </RuleTask>
+            <StopTask Identifier="task_2"/>
+        </TaskList>
+        <NodeList>
+            <TaskNode Identifier="node_0" Task="task_0"/>
+            <TaskNode Identifier="node_1" Task="task_1"/>
+            <TaskNode Identifier="node_2" Task="task_2"/>
+        </NodeList>
+        <TransitionList>
+            <Transition Identifier="transition_0" Source="node_0" Target="node_1"/>
+            <Transition Identifier="transition_1" Source="node_1" Target="node_2"/>
+        </TransitionList>
+    </Body>
+    <Resources>
+        <ResourceSet Locale="en_US">
+            <Data Name="node_0#name"><![CDATA[Start node]]></Data>
+            <Data Name="node_1#name"><![CDATA[IT201 calculation]]></Data>
+            <Data Name="node_2#name"><![CDATA[End node]]></Data>
+            <Data Name="node_1#label"><![CDATA[IT201 calculation]]></Data>
+        </ResourceSet>
+    </Resources>
+</Ruleflow></rfModel>
+</ilog.rules.studio.model.ruleflow:RuleFlow>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>09-1 set NYC_MNTH_NMBR(s)</name>
+  <uuid>caa7d83e-9356-4746-9a50-d23ced5cf6ed</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[if
+	the claimed of the NYC_LIAB_IND of 'return header' is Full-Year Liable ( 2 ) 
+    and the claimed of the FS_CD of IT201 is 2
+    and (the PR_NYC_MNTH_NMBR of IT201 ≠ 12
+    	or the SP_NYC_MNTH_NMBR of IT201 ≠ 12)
+then
+	set the PR_NYC_MNTH_NMBR of IT201 to 12;
+    set the SP_NYC_MNTH_NMBR of IT201 to 12;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

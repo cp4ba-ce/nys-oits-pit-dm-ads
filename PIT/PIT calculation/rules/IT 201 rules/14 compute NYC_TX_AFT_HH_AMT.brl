@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>14 compute NYC_TX_AFT_HH_AMT</name>
+  <uuid>c0071c15-ae42-49cd-bc0c-e686117b2159</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[then
+	set the value of the NYC_TX_AFT_HH_AMT of IT201 to 
+    	 max ( 0, the value of the NYC_TX_B4CR_AMT of IT201 - the value of the NYC_HH_CR_AMT of IT201 );]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>02-2 determine resident state with IT201X</name>
+  <uuid>4babebdc-0cc7-493f-a738-4a1740a9f688</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[if
+	IT201X is not null
+then
+	set the value of the R_RSDT_IND of IT214 to Standard ( 1 ) ;
+    set the IT214_FAGI of scratchpad to the value of the FEDAGI_RCOMP_AMT of IT201X ; ]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

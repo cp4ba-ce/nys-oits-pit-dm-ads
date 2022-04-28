@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>22-1 call PTRT with RL_PROP_CR_AMT</name>
+  <uuid>0de9116b-4f7d-4f03-ae87-c41ff9082895</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[if
+	IT214 is not null
+	and the RPTC_DENIED_IND of scratchpad is Absent 
+    and the value of the RL_PROP_CR_AMT of IT201 ≠ the RPTC_CR of scratchpad 
+    and there is no CISS Code in the CISS Codes of IT214 where the id of this CISS Code is 
+    	one of { C062, P001, P002, P003, P004, P005, P006, P007, P008, P009 },  
+then
+	lookup PTRT from 'reference data' for $ the value of the RL_PROP_CR_AMT of IT201 ;
+    ]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>10-2 set temp RES_CR</name>
+  <uuid>8eaff7ff-2e28-4cbb-aa2c-239a65901cb5</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[definitions
+	set 'all IT112Rs' to all IT 112Rs ;
+if
+    there is no CISS Code in the CISS Codes of IT201 where the id of this CISS Code is C045,    
+then
+	for each IT 112R in 'all IT112Rs' : 
+    	- set the RES_CR of scratchpad to 
+        	the RES_CR of scratchpad + the value of the RC_LSR_CR_AMT of this IT 112R ;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

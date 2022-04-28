@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionmodel:DecisionModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionmodel="http://com.ibm.rules.studio/model/decisionmodel.ecore">
+  <name>decisionModel</name>
+  <uuid>76caf11e-ed10-499b-90d6-668818c95851</uuid>
+  <locale>en_US</locale>
+  <definition><definitions xmlns="http://www.omg.org/spec/DMN/20180521/MODEL/" id="decisions" name="diagram" namespace="">
+    <extensionElements>
+        <locale xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" id="en_US"/>
+    </extensionElements>
+    <inputData id="node_0" name="IT201">
+        <extensionElements>
+            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <output bomType="IT201" collection="false" name="IT201"/>
+            </initialization>
+        </extensionElements>
+        <variable id="node_0_ii" name="IT201" typeRef="IT201"/>
+    </inputData>
+    <decision id="node_1" name="Computed IT201">
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="IT201" collection="false" name="IT201"/>
+                <input bomType="IT558" collection="false" name="IT558"/>
+                <input bomType="IT196" collection="false" name="IT196"/>
+                <input bomType="gov.ny.its.pit.refdata.ReferenceData" collection="false" name="reference data"/>
+                <input bomType="IT2141" collection="false" name="IT214"/>
+                <output bomType="IT201" collection="false" name="Computed IT201"/>
+                <rule defaultRule="false" href="node_1/initialize%20decision.drl" kind="BusinessRule" name="initialize decision"/>
+                <rule defaultRule="false" href="node_1/set%20FAGI.drl" kind="BusinessRule" name="set FAGI"/>
+                <rule defaultRule="false" href="node_1/compute%20FAGI.drl" kind="BusinessRule" name="compute FAGI"/>
+                <rule defaultRule="false" href="node_1/recompute%20FAGI%20with%20IT558.drl" kind="BusinessRule" name="recompute FAGI with IT558"/>
+                <rule defaultRule="false" href="node_1/recompute%20FAGI%20(temp%20CISS%20FAGI).drl" kind="BusinessRule" name="recompute FAGI (temp CISS FAGI)"/>
+                <rule defaultRule="false" href="node_1/recompute%20FAGI%20(no%20temp%20CISS%20FAGI).drl" kind="BusinessRule" name="recompute FAGI (no temp CISS FAGI)"/>
+                <rule defaultRule="false" href="node_1/itemize%20deduction%20-%201.drl" kind="BusinessRule" name="itemize deduction - 1"/>
+                <rule defaultRule="false" href="node_1/call%20PTRT%20with%20RL_PROP_CR_AMT.drl" kind="BusinessRule" name="call PTRT with RL_PROP_CR_AMT"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="node_1_ii" name="Computed IT201" typeRef="IT201"/>
+        <informationRequirement>
+            <requiredInput href="#node_0"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#node_2"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#node_3"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#node_4"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#node_5"/>
+        </informationRequirement>
+    </decision>
+    <inputData id="node_2" name="IT558">
+        <extensionElements>
+            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <output bomType="IT558" collection="false" name="IT558"/>
+            </initialization>
+        </extensionElements>
+        <variable id="node_2_ii" name="IT558" typeRef="IT558"/>
+    </inputData>
+    <inputData id="node_3" name="IT196">
+        <extensionElements>
+            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <output bomType="IT196" collection="false" name="IT196"/>
+            </initialization>
+        </extensionElements>
+        <variable id="node_3_ii" name="IT196" typeRef="IT196"/>
+    </inputData>
+    <inputData id="node_4" name="reference data">
+        <extensionElements>
+            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <output bomType="gov.ny.its.pit.refdata.ReferenceData" collection="false" name="reference data"/>
+            </initialization>
+        </extensionElements>
+        <variable id="node_4_ii" name="reference data" typeRef="gov.ny.its.pit.refdata.ReferenceData"/>
+    </inputData>
+    <inputData id="node_5" name="IT214">
+        <extensionElements>
+            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <output bomType="IT2141" collection="false" name="IT214"/>
+            </initialization>
+        </extensionElements>
+        <variable id="node_5_ii" name="IT214" typeRef="IT2141"/>
+    </inputData>
+</definitions></definition>
+</com.ibm.rules.studio.model.decisionmodel:DecisionModel>
