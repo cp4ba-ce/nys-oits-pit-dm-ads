@@ -61,6 +61,7 @@
         <module>.decisionservice</module>
         <module>IT201 rules</module>
         <module>IT214 rules</module>
+        <module>IT229 rules</module>
         <module>PIT calculation</module>
         <module>forms</module>
     </modules>

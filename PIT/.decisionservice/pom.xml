@@ -22,6 +22,11 @@
             <version>LATEST-SNAPSHOT</version>
         </dependency>
         <dependency>
+            <groupId>_7d0970897.nys_oits___decision_model.pit</groupId>
+            <artifactId>IT229Rules</artifactId>
+            <version>LATEST-SNAPSHOT</version>
+        </dependency>
+        <dependency>
             <groupId>cp4admin.nys_oits.pit</groupId>
             <artifactId>PITCalculation</artifactId>
             <version>LATEST-SNAPSHOT</version>
@@ -45,6 +50,9 @@
     </dependencies>
 
     
+
+
+
 
 
 
@@ -107,6 +115,15 @@
                                 <artifactItem>
                                     <groupId>_7d0970897.nys_oits___decision_model.pit</groupId>
                                     <artifactId>IT214Rules</artifactId>
+                                    <version>LATEST-SNAPSHOT</version>
+                                    <type>jar</type>
+                                    <overWrite>false</overWrite>
+                                    <includes>**/*.class</includes>
+                                    <outputDirectory>${project.build.directory}/classes</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>_7d0970897.nys_oits___decision_model.pit</groupId>
+                                    <artifactId>IT229Rules</artifactId>
                                     <version>LATEST-SNAPSHOT</version>
                                     <type>jar</type>
                                     <overWrite>false</overWrite>

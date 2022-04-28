@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<com.ibm.rules.studio.model.decisionservice:Deployment xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" ruleAppName="cp4admin.nys_oits.pit:PITCalculation" ruleAppVersion="LATEST-SNAPSHOT" packageName="cp4admin.nys_oits.pit.pitcalculation" managingXom="true">
-  <name>PIT-calculation</name>
-  <uuid>1e9a0b09-c99b-4354-b3d7-80798a6e9e2d</uuid>
+<com.ibm.rules.studio.model.decisionservice:Deployment xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" ruleAppName="_7d0970897.nys_oits___decision_model.pit:IT229Rules" ruleAppVersion="LATEST-SNAPSHOT" packageName="_7d0970897.nys_oits___decision_model.pit.it229rules" managingXom="true">
+  <name>IT229-rules</name>
+  <uuid>3808ebb6-448e-4069-b10b-bc7ae9b946ee</uuid>
   <locales>en_US</locales>
-  <operations operationName="runPITReturnCalculations">
-    <operation href="runPITReturnCalculations.dop#cdd8816d-04c1-49ba-9b35-5b4be7200bb4"/>
+  <operations operationName="operation">
+    <operation href="operation.dop#deb23952-738a-4459-9356-f89529abf0a0"/>
     <properties key="ruleset.version">
       <value><![CDATA[1.0]]></value>
     </properties>

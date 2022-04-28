@@ -14,4 +14,6 @@
   <variables name="IT227" type="IT2271" initialValue="" verbalization="IT227" jsonName=""/>
   <variables name="exceptions" type="java.util.List&lt;Exception>" initialValue="" verbalization="exceptions" jsonName=""/>
   <variables name="PITReturn" type="PITReturn" initialValue="" verbalization="PIT return" jsonName=""/>
+  <variables name="globals" type="Globals" initialValue="" verbalization="globals" jsonName=""/>
+  <variables name="IT229" type="IT229" initialValue="" verbalization="IT229" jsonName=""/>
 </ilog.rules.studio.model.base:VariableSet>

@@ -726,6 +726,10 @@ public class IT2141
                 property "ads.attributeId" "13"
                 property "com.fasterxml.jackson.annotation.JsonProperty" "TEMP_LINE30"
                 property update "true";
+    public Globals globals
+                property "ads.attributeId" "14"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "globals"
+                property update "true";
     public AmountField1 r_CR_LMT_AMT
                 property "ads.attributeId" "8"
                 property "com.fasterxml.jackson.annotation.JsonProperty" "R_CR_LMT_AMT"
@@ -760,6 +764,7 @@ public class IT2141
         double TEMP_FAGI, 
         double TEMP_LINE18, 
         double TEMP_LINE30, 
+        Globals globals, 
         AmountField1 r_CR_LMT_AMT, 
         AmountField1 r_GRSS_INC_R_AMT, 
         AmountField1 r_RL_PROP_CR_AMT, 
