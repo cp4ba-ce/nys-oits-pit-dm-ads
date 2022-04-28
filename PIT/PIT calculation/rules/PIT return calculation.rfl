@@ -8,11 +8,6 @@
         <TaskList>
             <StartTask Identifier="task_0"/>
             <StopTask Identifier="task_2"/>
-            <RuleTask ExecutionMode="Sequential" ExitCriteria="None" Identifier="task_3" Ordering="Default">
-                <RuleList>
-                    <Package Name="IT 214 rules"/>
-                </RuleList>
-            </RuleTask>
             <ActionTask Identifier="task_4">
                 <Actions Language="bal"><![CDATA[set IT201 to the IT201 of 'PIT return' ;
 set IT558 to the IT558 of 'PIT return' ; 
@@ -33,54 +28,57 @@ set the exceptions of 'PIT return' to exceptions ;
 //set the scratchpad of 'PIT return' to scratchpad ;
 ]]></Actions>
             </ActionTask>
-            <RuleTask ExecutionMode="RetePlus" ExitCriteria="None" Identifier="task_1" Ordering="Default">
-                <RuleList>
-                    <Package Name="IT 201 rules"/>
-                </RuleList>
-            </RuleTask>
-            <RuleTask ExecutionMode="Fastpath" ExitCriteria="None" Identifier="task_5" Ordering="Default">
-                <RuleList>
-                    <Package Name="IT 229 rules"/>
-                </RuleList>
-            </RuleTask>
+            <FunctionTask Identifier="task_3">
+                <Invocation FunctionIdentifier="_7d0970897.nys_oits_dm.pit.it201rules.IT201_rules">
+                    <InputBindings>
+                        <Binding Language="bal" Name="inputForm"><![CDATA[IT201 ]]></Binding>
+                        <Binding Language="bal" Name="IT558"><![CDATA[IT558]]></Binding>
+                        <Binding Language="bal" Name="IT196"><![CDATA[IT196]]></Binding>
+                        <Binding Language="bal" Name="referenceData"><![CDATA[reference data]]></Binding>
+                        <Binding Language="bal" Name="IT214"><![CDATA[IT214]]></Binding>
+                    </InputBindings>
+                    <OutputBindings>
+                        <Binding Language="bal" Name="IT201"><![CDATA['IT201 rules' ]]></Binding>
+                    </OutputBindings>
+                </Invocation>
+            </FunctionTask>
+            <FunctionTask Identifier="task_5">
+                <Invocation FunctionIdentifier="_7d0970897.nys_oits___decision_model.pit.it214rules.IT214_rules">
+                    <InputBindings>
+                        <Binding Language="bal" Name="inputForm"><![CDATA[IT214]]></Binding>
+                        <Binding Language="bal" Name="IT201"><![CDATA[IT201]]></Binding>
+                        <Binding Language="bal" Name="referenceData"><![CDATA['reference data']]></Binding>
+                    </InputBindings>
+                    <OutputBindings>
+                        <Binding Language="bal" Name="IT214"><![CDATA['IT214 rules' ]]></Binding>
+                    </OutputBindings>
+                </Invocation>
+            </FunctionTask>
         </TaskList>
         <NodeList>
             <TaskNode Identifier="node_0" Task="task_0"/>
             <TaskNode Identifier="node_2" Task="task_2"/>
-            <TaskNode Identifier="node_3" Task="task_3"/>
             <TaskNode Identifier="node_4" Task="task_4"/>
-            <TaskNode Identifier="node_1" Task="task_1"/>
-            <ForkNode Identifier="node_5"/>
-            <JoinNode Identifier="node_6"/>
-            <TaskNode Identifier="node_7" Task="task_5"/>
+            <TaskNode Identifier="node_3" Task="task_3"/>
+            <TaskNode Identifier="node_5" Task="task_5"/>
         </NodeList>
         <TransitionList>
             <Transition Identifier="transition_4" Source="node_0" Target="node_4"/>
-            <Transition Identifier="transition_6" Source="node_4" Target="node_5"/>
-            <Transition Identifier="transition_1" Source="node_1" Target="node_2"/>
-            <Transition Identifier="transition_7" Source="node_6" Target="node_1"/>
-            <Transition Identifier="transition_8" Source="node_3" Target="node_6"/>
-            <Transition Identifier="transition_9" Source="node_5" Target="node_7"/>
-            <Transition Identifier="transition_10" Source="node_5" Target="node_3"/>
-            <Transition Identifier="transition_11" Source="node_7" Target="node_6"/>
+            <Transition Identifier="transition_1" Source="node_4" Target="node_5"/>
+            <Transition Identifier="transition_2" Source="node_5" Target="node_3"/>
+            <Transition Identifier="transition_3" Source="node_3" Target="node_2"/>
         </TransitionList>
     </Body>
     <Resources>
         <ResourceSet Locale="en_US">
-            <Data Name="node_7#label"><![CDATA[run IT229]]></Data>
-            <Data Name="node_5#name"><![CDATA[Fork node 1]]></Data>
-            <Data Name="node_1#name"><![CDATA[run IT201]]></Data>
-            <Data Name="node_2#name"><![CDATA[End node]]></Data>
-            <Data Name="node_5#label"><![CDATA[Fork node 1]]></Data>
-            <Data Name="node_4#name"><![CDATA[initialize]]></Data>
-            <Data Name="node_1#label"><![CDATA[run IT201]]></Data>
-            <Data Name="node_6#label"><![CDATA[Join node 1]]></Data>
-            <Data Name="node_7#name"><![CDATA[run IT229]]></Data>
-            <Data Name="node_6#name"><![CDATA[Join node 1]]></Data>
-            <Data Name="node_3#label"><![CDATA[run IT214]]></Data>
+            <Data Name="node_3#label"><![CDATA[run IT201 computations]]></Data>
             <Data Name="node_0#name"><![CDATA[Start node]]></Data>
             <Data Name="node_4#label"><![CDATA[initialize]]></Data>
-            <Data Name="node_3#name"><![CDATA[run IT214]]></Data>
+            <Data Name="node_5#name"><![CDATA[run IT214 computations]]></Data>
+            <Data Name="node_2#name"><![CDATA[End node]]></Data>
+            <Data Name="node_5#label"><![CDATA[run IT214 computations]]></Data>
+            <Data Name="node_4#name"><![CDATA[initialize]]></Data>
+            <Data Name="node_3#name"><![CDATA[run IT201 computations]]></Data>
         </ResourceSet>
     </Resources>
 </Ruleflow></rfModel>

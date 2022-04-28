@@ -7,8 +7,8 @@
         <version>1.0.0-SNAPSHOT</version>
     </parent>
 
-    <groupId>cp4admin.nys_oits.pit</groupId>
-    <artifactId>PITCalculation</artifactId>
+    <groupId>_7d0970897.nys_oits___decision_model.pit</groupId>
+    <artifactId>IT214Rules</artifactId>
     <version>LATEST-SNAPSHOT</version>
 
     <build>
@@ -26,10 +26,10 @@
                 <configuration>
                     <deployments>
                         <deployment>
-                            <name>PIT-calculation</name>
+                            <name>IT214-rules</name>
                         </deployment>
                     </deployments>
-                <packageName>cp4admin.nys_oits.pit.pitcalculation</packageName>
+                <packageName>_7d0970897.nys_oits___decision_model.pit.it214rules</packageName>
                 </configuration>
             </plugin>
         </plugins>
@@ -39,16 +39,6 @@
         <dependency>
             <groupId>cp4admin.nys_oits.pit</groupId>
             <artifactId>forms</artifactId>
-            <version>LATEST-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>_7d0970897.nys_oits_dm.pit</groupId>
-            <artifactId>IT201Rules</artifactId>
-            <version>LATEST-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>_7d0970897.nys_oits___decision_model.pit</groupId>
-            <artifactId>IT214Rules</artifactId>
             <version>LATEST-SNAPSHOT</version>
         </dependency>
         <dependency>

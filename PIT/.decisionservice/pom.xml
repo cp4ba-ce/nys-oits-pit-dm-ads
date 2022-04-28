@@ -2,7 +2,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>_7d0970897.nys_oits_dm.pit</groupId>
+        <groupId>_7d0970897.nys_oits___decision_model.pit</groupId>
         <artifactId>PIT</artifactId>
         <version>1.0.0-SNAPSHOT</version>
     </parent>
@@ -14,6 +14,11 @@
         <dependency>
             <groupId>_7d0970897.nys_oits_dm.pit</groupId>
             <artifactId>IT201Rules</artifactId>
+            <version>LATEST-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>_7d0970897.nys_oits___decision_model.pit</groupId>
+            <artifactId>IT214Rules</artifactId>
             <version>LATEST-SNAPSHOT</version>
         </dependency>
         <dependency>
@@ -40,6 +45,10 @@
     </dependencies>
 
     
+
+
+
+
 
 
 
@@ -89,6 +98,15 @@
                                 <artifactItem>
                                     <groupId>_7d0970897.nys_oits_dm.pit</groupId>
                                     <artifactId>IT201Rules</artifactId>
+                                    <version>LATEST-SNAPSHOT</version>
+                                    <type>jar</type>
+                                    <overWrite>false</overWrite>
+                                    <includes>**/*.class</includes>
+                                    <outputDirectory>${project.build.directory}/classes</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>_7d0970897.nys_oits___decision_model.pit</groupId>
+                                    <artifactId>IT214Rules</artifactId>
                                     <version>LATEST-SNAPSHOT</version>
                                     <type>jar</type>
                                     <overWrite>false</overWrite>

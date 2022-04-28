@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
-  <name>16 compute NYC_TAX_AFT_CR_AMT</name>
-  <uuid>e3201e4f-4511-4d7a-b03f-2058da48b494</uuid>
-  <locale>en_US</locale>
-  <definition><![CDATA[then
-	set the value of the NYC_TAX_AFT_CR_AMT of IT201 to 
-    	 max ( 0, the value of the NYC_TOT_TX_AMT of IT201 - the value of the NYC_NRFND_CR_AMT of IT201) ;]]></definition>
-</ilog.rules.studio.model.brl:ActionRule>

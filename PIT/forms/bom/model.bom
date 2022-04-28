@@ -428,6 +428,10 @@ public class IT201
                 property "ads.attributeId" "86"
                 property "com.fasterxml.jackson.annotation.JsonProperty" "TEMP_PSDT_DED_AMOUNT"
                 property update "true";
+    public double TEMP_RES_CR
+                property "ads.attributeId" "89"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "TEMP_RES_CR"
+                property update "true";
     public double TEMP_RPTC_CR
                 property "ads.attributeId" "88"
                 property "com.fasterxml.jackson.annotation.JsonProperty" "TEMP_RPTC_CR"
@@ -619,6 +623,7 @@ public class IT201
         IndicatorType03Field STD_ITZ_IND, 
         SwitchIndicatorValue TEMP_CISS_FAGI, 
         double TEMP_PSDT_DED_AMOUNT, 
+        double TEMP_RES_CR, 
         double TEMP_RPTC_CR, 
         SwitchIndicatorValue TEMP_RPTC_DENIED_IND, 
         double TEMP_STND_DED_AMT, 
@@ -705,6 +710,22 @@ public class IT2141
                 property "ads.attributeId" "4"
                 property "com.fasterxml.jackson.annotation.JsonProperty" "FEDAGI_RCOMP_AMT"
                 property update "true";
+    public SwitchIndicatorValue TEMP_CR_DENIED_IND
+                property "ads.attributeId" "11"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "TEMP_CR_DENIED_IND"
+                property update "true";
+    public double TEMP_FAGI
+                property "ads.attributeId" "10"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "TEMP_FAGI"
+                property update "true";
+    public double TEMP_LINE18
+                property "ads.attributeId" "12"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "TEMP_LINE18"
+                property update "true";
+    public double TEMP_LINE30
+                property "ads.attributeId" "13"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "TEMP_LINE30"
+                property update "true";
     public AmountField1 r_CR_LMT_AMT
                 property "ads.attributeId" "8"
                 property "com.fasterxml.jackson.annotation.JsonProperty" "R_CR_LMT_AMT"
@@ -735,6 +756,10 @@ public class IT2141
                 property update "true";
     public IT2141(java.util.List CISSCodes domain 0,* class CISSCode, 
         AmountField1 FEDAGI_RCOMP_AMT, 
+        SwitchIndicatorValue TEMP_CR_DENIED_IND, 
+        double TEMP_FAGI, 
+        double TEMP_LINE18, 
+        double TEMP_LINE30, 
         AmountField1 r_CR_LMT_AMT, 
         AmountField1 r_GRSS_INC_R_AMT, 
         AmountField1 r_RL_PROP_CR_AMT, 

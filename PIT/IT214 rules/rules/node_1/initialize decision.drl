@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
-  <name>29 compute OVER_PAID_AMT</name>
-  <uuid>823ee703-f7a9-4643-bc29-009cc32a6714</uuid>
+  <name>initialize decision</name>
+  <uuid>74433d22-62f9-4d3e-9bbb-b510e8db40c9</uuid>
   <locale>en_US</locale>
-  <definition><![CDATA[then
-	set the IT201_OVER_PAID_AMT of scratchpad to
-    	the value of the PD_ORIG_RTN_AMT of IT201 - the value of the TX_GFT_AMT of IT201 ;]]></definition>
+  <definition><![CDATA[set decision to 'input form' ; ]]></definition>
 </ilog.rules.studio.model.brl:ActionRule>

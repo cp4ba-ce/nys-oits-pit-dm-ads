@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
-  <name>01 set FAGI</name>
-  <uuid>20032311-1fa7-47ae-ae1e-03f6b997d777</uuid>
-  <locale>en_US</locale>
-  <definition><![CDATA[then
-	set the value of the FEDAGI_AMT of IT201 to the claimed of the FEDAGI_AMT of IT201 ;]]></definition>
-</ilog.rules.studio.model.brl:ActionRule>

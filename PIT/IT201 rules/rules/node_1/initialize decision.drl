@@ -3,5 +3,5 @@
   <name>initialize decision</name>
   <uuid>8e8bf890-5154-47b4-8e81-c4ef64509e06</uuid>
   <locale>en_US</locale>
-  <definition><![CDATA[set decision to IT201 ; ]]></definition>
+  <definition><![CDATA[set decision to 'input form' ;]]></definition>
 </ilog.rules.studio.model.brl:ActionRule>

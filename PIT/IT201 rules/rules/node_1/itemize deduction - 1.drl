@@ -4,9 +4,9 @@
   <uuid>64fbbf67-fcad-4f54-815e-6bd559dc0905</uuid>
   <locale>en_US</locale>
   <definition><![CDATA[if
-	the claimed of the FS_CD of IT201 is not 3  
+	the claimed of the FS_CD of decision is not 3  
 	and IT196 is null
 then
-	set the TEMP_STND_DED_AMT of decision to the TEMP_PSDT_DED_AMOUNT of IT201 ;
+	set the TEMP_STND_DED_AMT of decision to the TEMP_PSDT_DED_AMOUNT of decision ;
     set the value of the STD_ITZ_IND of decision to Standard ( 1 ) ;]]></definition>
 </ilog.rules.studio.model.brl:ActionRule>

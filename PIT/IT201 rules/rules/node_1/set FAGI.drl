@@ -3,5 +3,5 @@
   <name>set FAGI</name>
   <uuid>a160cb06-0556-4ba4-95b9-887f112597cd</uuid>
   <locale>en_US</locale>
-  <definition><![CDATA[set the value of the FEDAGI_AMT of decision to the claimed of the FEDAGI_AMT of IT201 ;]]></definition>
+  <definition><![CDATA[set the value of the FEDAGI_AMT of decision to the claimed of the FEDAGI_AMT of decision ;]]></definition>
 </ilog.rules.studio.model.brl:ActionRule>

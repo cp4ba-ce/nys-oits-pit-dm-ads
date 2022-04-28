@@ -4,24 +4,24 @@
   <uuid>eec069e9-ad7e-44e7-ab90-1b1f222004e4</uuid>
   <locale>en_US</locale>
   <definition><![CDATA[if
-	the TEMP_CISS_FAGI of IT201 is Present 
+	the TEMP_CISS_FAGI of decision is Present 
 then
-	set decision to IT201 ; 
+	set decision to 'input form' ; 
 	set the value of the FEDAGI_AMT of decision to 
-    		the value of the WG_AMT of IT201 + 
-        	the value of the INT_AMT of IT201 + 
-        	the value of the DVND_AMT of IT201 +
-        	the value of the TXBL_RFND_AMT of IT201 +
-            the value of the ALIM_AMT of IT201 +
-            the value of the BUS_INC_AMT of IT201 +
-            the value of the CAP_GL_AMT of IT201 +
-            the value of the OTH_GL_AMT of IT201 +
-            the value of the IRA_AMT of IT201 +
-            the value of the PNSN_AMT of IT201 +
-            the value of the RNT_PRTN_AMT of IT201 +
-            the value of the FRM_GL_AMT of IT201 +
-            the value of the TX_UNEMP_AMT of IT201 +
-            the value of the SSINC_AMT of IT201 +
-            the value of the OTHINC_AMT of IT201 +
-            the value of the FEDADJ_AMT of IT201;  ]]></definition>
+    		the value of the WG_AMT of decision + 
+        	the value of the INT_AMT of decision + 
+        	the value of the DVND_AMT of decision +
+        	the value of the TXBL_RFND_AMT of decision +
+            the value of the ALIM_AMT of decision +
+            the value of the BUS_INC_AMT of decision +
+            the value of the CAP_GL_AMT of decision +
+            the value of the OTH_GL_AMT of decision +
+            the value of the IRA_AMT of decision +
+            the value of the PNSN_AMT of decision +
+            the value of the RNT_PRTN_AMT of decision +
+            the value of the FRM_GL_AMT of decision +
+            the value of the TX_UNEMP_AMT of decision +
+            the value of the SSINC_AMT of decision +
+            the value of the OTHINC_AMT of decision +
+            the value of the FEDADJ_AMT of decision;  ]]></definition>
 </ilog.rules.studio.model.brl:ActionRule>
