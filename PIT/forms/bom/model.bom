@@ -148,15 +148,15 @@ public class Exception
         property "com.fasterxml.jackson.annotation.JsonTypeName" "Exception"
         property "de.generated" "true"
 {
-    public string CODE
+    public string code
                 property "ads.attributeId" "1"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "CODE"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "code"
                 property update "true";
-    public string RULE_NAME
+    public string ruleName
                 property "ads.attributeId" "2"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "RULE_NAME"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ruleName"
                 property update "true";
-    public Exception(string CODE, string RULE_NAME)
+    public Exception(string ruleName, string code)
                 property autoExpand "true"
                 property beanConstructor "true"
                 property groups "BALA"
@@ -170,11 +170,15 @@ public class Globals
         property "com.fasterxml.jackson.annotation.JsonTypeName" "Globals"
         property "de.generated" "true"
 {
+    public java.lang.Long IT214_COUNTER
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "IT214_COUNTER"
+                property update "true";
     public SwitchIndicatorValue NY_TX_ADJ_IND
                 property "ads.attributeId" "1"
                 property "com.fasterxml.jackson.annotation.JsonProperty" "NY_TX_ADJ_IND"
                 property update "true";
-    public Globals(SwitchIndicatorValue NY_TX_ADJ_IND)
+    public Globals(java.lang.Long IT214_COUNTER, SwitchIndicatorValue NY_TX_ADJ_IND)
                 property autoExpand "true"
                 property beanConstructor "true"
                 property groups "BALA"
@@ -710,6 +714,10 @@ public class IT2141
                 property "ads.attributeId" "4"
                 property "com.fasterxml.jackson.annotation.JsonProperty" "FEDAGI_RCOMP_AMT"
                 property update "true";
+    public AdjustedReasonCodeId TEMP_ARC
+                property "ads.attributeId" "15"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "TEMP_ARC"
+                property update "true";
     public SwitchIndicatorValue TEMP_CR_DENIED_IND
                 property "ads.attributeId" "11"
                 property "com.fasterxml.jackson.annotation.JsonProperty" "TEMP_CR_DENIED_IND"
@@ -760,6 +768,7 @@ public class IT2141
                 property update "true";
     public IT2141(java.util.List CISSCodes domain 0,* class CISSCode, 
         AmountField1 FEDAGI_RCOMP_AMT, 
+        AdjustedReasonCodeId TEMP_ARC, 
         SwitchIndicatorValue TEMP_CR_DENIED_IND, 
         double TEMP_FAGI, 
         double TEMP_LINE18, 

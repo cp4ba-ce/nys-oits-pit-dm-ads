@@ -6,7 +6,6 @@
   <definition><![CDATA[if
 	the TEMP_CISS_FAGI of decision is Present 
 then
-	set decision to 'input form' ; 
 	set the value of the FEDAGI_AMT of decision to 
     		the value of the WG_AMT of decision + 
         	the value of the INT_AMT of decision + 

@@ -23,8 +23,14 @@
                 <input bomType="gov.ny.its.pit.refdata.ReferenceData" collection="false" name="reference data"/>
                 <output bomType="IT2141" collection="false" name="computed IT214"/>
                 <rule defaultRule="false" href="node_1/initialize%20decision.drl" kind="BusinessRule" name="initialize decision"/>
-                <rule defaultRule="false" href="node_1/determine%20resident%20state%20with%20IT201.drl" kind="BusinessRule" name="determine resident state with IT201"/>
-                <rule defaultRule="false" href="node_1/compute%20line%2016x%20with%20RPTC.drl" kind="BusinessRule" name="compute line 16x with RPTC"/>
+                <rule defaultRule="false" href="node_1/2.1%20-%20determine%20resident%20state%20with%20IT201.drl" kind="BusinessRule" name="2.1 - determine resident state with IT201"/>
+                <rule defaultRule="false" href="node_1/3%20-%20household%20gross%20income.drl" kind="BusinessRule" name="3 - household gross income"/>
+                <rule defaultRule="false" href="node_1/4%20-%20household%20gross%20income%20with%20RPTC.drl" kind="BusinessRule" name="4 - household gross income with RPTC"/>
+                <rule defaultRule="false" href="node_1/5.1%20-%20compute%20temp%20line%2018%20with%20RPTC.drl" kind="BusinessRule" name="5.1 - compute temp line 18 with RPTC"/>
+                <rule defaultRule="false" href="node_1/5.2%20-%20compute%20temp%20line%2018.drl" kind="BusinessRule" name="5.2 - compute temp line 18"/>
+                <rule defaultRule="false" href="node_1/6%20-%20compute%20temp%20line%2030.drl" kind="BusinessRule" name="6 - compute temp line 30"/>
+                <rule defaultRule="false" href="node_1/11.1%20-%20household%20gross%20income.drl" kind="BusinessRule" name="11.1 - household gross income"/>
+                <rule defaultRule="false" href="node_1/11.2%20-%20household%20gross%20income.drl" kind="BusinessRule" name="11.2 - household gross income"/>
             </ruleset>
         </extensionElements>
         <variable id="node_1_ii" name="computed IT214" typeRef="IT2141"/>

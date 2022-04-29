@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
-  <name>compute line 16x with RPTC</name>
+  <name>5.1 - compute temp line 18 with RPTC</name>
   <uuid>27d812cd-d802-42ea-a450-0d0309643192</uuid>
   <locale>en_US</locale>
   <definition><![CDATA[if

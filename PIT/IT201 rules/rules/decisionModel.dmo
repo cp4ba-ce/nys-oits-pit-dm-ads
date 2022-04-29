@@ -23,7 +23,7 @@
                 <input bomType="IT196" collection="false" name="IT196"/>
                 <input bomType="gov.ny.its.pit.refdata.ReferenceData" collection="false" name="reference data"/>
                 <input bomType="IT2141" collection="false" name="IT214"/>
-                <input bomType="IT112R1" collection="true" name="IT212R"/>
+                <input bomType="IT112R1" collection="true" name="IT112R"/>
                 <output bomType="IT201" collection="false" name="Computed IT201"/>
                 <rule defaultRule="false" href="node_1/initialize%20decision.drl" kind="BusinessRule" name="initialize decision"/>
                 <rule defaultRule="false" href="node_1/set%20FAGI.drl" kind="BusinessRule" name="set FAGI"/>
@@ -88,13 +88,13 @@
         </extensionElements>
         <variable id="node_5_ii" name="IT214" typeRef="IT2141"/>
     </inputData>
-    <inputData id="node_6" name="IT212R">
+    <inputData id="node_6" name="IT112R">
         <extensionElements>
             <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
-                <output bomType="IT112R1" collection="true" name="IT212R"/>
+                <output bomType="IT112R1" collection="true" name="IT112R"/>
             </initialization>
         </extensionElements>
-        <variable id="node_6_ii" name="IT212R" typeRef="IT112R1[]"/>
+        <variable id="node_6_ii" name="IT112R" typeRef="IT112R1[]"/>
     </inputData>
 </definitions></definition>
 </com.ibm.rules.studio.model.decisionmodel:DecisionModel>
